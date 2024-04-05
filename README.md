@@ -1,6 +1,6 @@
 # Exceções em Java:
 
-## Resumo sobre Exceções:
+## Breve resumo sobre Exceções:
 
 ![](/assets/excecoes.png)
 
