@@ -23,7 +23,7 @@ public class GerenciadorContato {
         contatos.remove(buscarPosicaoPorNomeETelefone(contato, telefone));
     }
 
-    // Usando exceção não checada e não sendo tratada
+    // Usando exceção não checada e sendo tratada
     public void alterarNomeContato(String nome, String novoNome) {
         Contato contato = contatos.get(buscarPosicaoPorNome(nome));
         contato.alterarNome(novoNome);
@@ -82,7 +82,7 @@ public class GerenciadorContato {
 
         /* Dessa forma o programa irá parar.
         Usando o return no método buscarPosicaoPorEmail -> return posicao;
-        Como está retornando posição, o código continua a ser executado após a chamada do método
+        Como está retornando posição, o código é interrompido ao chegar no método.
         */
 
         } catch (EmailNotFoundException e) {
