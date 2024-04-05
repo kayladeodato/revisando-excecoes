@@ -151,7 +151,9 @@ public void pesquisarContatoEmail(String email) {
 ```
 
 ### Mútiplos catches, finally e try-with-resources  
+
 **Múltiplos Catches e finally**  
+
 Podemos capturar mais de um tipo de exceção através do catch. Isso pode assegurar em que caso uma exceção não seja chamada, uma outra irá chamar. 
 
 ```java
@@ -186,6 +188,7 @@ finally {
 ```
 
 **try-with-resources**  
+
 É importante se atentar que um try sozinho não é válido, é exigido pelo menos um `catch` ou um `finally`.
 O try-with-resources é veio apartir do Java 7 e simplifica o uso de recursos que precisam ser fechados após o uso (ver interface `AutoCloseable`), garantindo que sejam fechados automaticamente após a execução de um bloco try, mesmo em caso de exceção. 
 Com isso, elimina a necessidade de blocos finally para fechar recursos, proporcionando um código mais conciso e seguro.
